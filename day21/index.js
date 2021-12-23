@@ -18,7 +18,7 @@ export default function canCarry(capacity, trip) {
   return exceedsMaxLoad;
 }
 
-export default function canCarry(capacity, trip) {
+export function canCarry(capacity, trip) {
   const sortByLoctionAndQuantity = ([la, qa], [lb, qb]) => la - lb === 0 ? qa - qb : la - lb;
 
   const planned = [
